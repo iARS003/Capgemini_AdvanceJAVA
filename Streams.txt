@@ -1,0 +1,75 @@
+Stream
+
+Characteristics
+
+1. Stream does not store data.
+2. Source can be collections – arrays, files & generator function.
+3. Stream is functional in nature & it uses:
+Lambda expression
+Functional interface
+Method reference
+4. Stream functions are lazy. Nothing happens until you call terminal operation.
+Execution starts when we call these functions:
+forEach()
+collect()
+toList()
+count()
+5. Stream Pipeline Model – 3 Stage
+Source → Intermediate Operations → Terminal Operation
+
+Example:
+
+list.stream()      // source
+    .filter(n -> n * 2)   // intermediate
+    .toList()      // collect or terminal
+
+Flow
+Collection → Stream → Filter → Transform → Collect → Result
+Mutate → Means update the existing value
+Transform → Create / Return new datatype
+
+---
+
+
+List<Student> s = List.of(new Student("A", 98), ...);
+
+List<Student> passed = s.stream()
+        .filter(n -> n.mark >= 60)
+        .toList();
+
+Example data:
+
+A - 98
+B - 60
+C - 40
+
+After filter ≥ 60
+
+A → 98
+B → 60
+
+(map operation is there)
+
+
+---
+
+Method
+
+Common Terminal Operations
+toList(), collect() → gather results
+forEach() → iterate
+count() → count elements
+findFirst() → get first element
+anyMatch(), allMatch(), noneMatch() → condition check
+reduce() → aggregation
+
+---
+
+Common Intermediate Operations
+filter() → remove elements
+map() → transform elements
+sorted() → sort elements
+distinct() → remove duplicates
+limit() → take first N
+skip() → skip first N
+peek() → debug

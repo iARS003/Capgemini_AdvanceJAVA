@@ -1,0 +1,20 @@
+Generic
+ArrayList list = new list → Collection
+public <T> <> → Diamond operator
+ArrayList <Integer> → Generic
+→ Datatype
+API call → Function → passing obj
+            receiving
+T → Type
+N → Number
+K → Key
+V → Value
+E → Element (Used in Collection storing)
+
+For Object we need → Number
+
+Encapsulation – Binding of data variable with method
+Loose Couple – Method Overloading
+Tight Couple – Method Overriding
+
+Lambda Exp: It is used to simplify the implementation of functional interface (interface which contains only one abstract method) (@ Functional Interface → Annotation) but has many static method
